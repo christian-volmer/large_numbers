@@ -1,12 +1,12 @@
 /*
-	             Copyright Christian Volmer 2024.
-	Distributed under the Boost Software License, Version 1.0.
-	     (See accompanying file LICENSE_1_0.txt or copy at
-	          https://www.boost.org/LICENSE_1_0.txt)
+                 Copyright Christian Volmer 2024.
+    Distributed under the Boost Software License, Version 1.0.
+         (See accompanying file LICENSE_1_0.txt or copy at
+              https://www.boost.org/LICENSE_1_0.txt)
 */
 
 /*
-	Performs basic arithmetic operations on random integers and checks by means of several basic identities -- some of which are the binomial formulas -- if the computations are correct.
+    Performs basic arithmetic operations on random integers and checks by means of several basic identities -- some of which are the binomial formulas -- if the computations are correct.
 */
 
 #pragma once

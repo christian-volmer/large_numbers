@@ -1,12 +1,12 @@
 /*
-	             Copyright Christian Volmer 2024.
-	Distributed under the Boost Software License, Version 1.0.
-	     (See accompanying file LICENSE_1_0.txt or copy at
-	          https://www.boost.org/LICENSE_1_0.txt)
+                 Copyright Christian Volmer 2024.
+    Distributed under the Boost Software License, Version 1.0.
+         (See accompanying file LICENSE_1_0.txt or copy at
+              https://www.boost.org/LICENSE_1_0.txt)
 */
 
 /*
-	<no description>
+    <no description>
 */
 
 #pragma once
@@ -41,8 +41,8 @@ inline void shift_left(limb_type *dest, size_t dest_capacity, bool dest_signed, 
 
 	for (; i > coarse; --i) {
 
-		intermediate_type temp =
-			(static_cast<intermediate_type>(dest[i - coarse]) << traits::bits_per_limb)
+		intermediate_type temp
+			= (static_cast<intermediate_type>(dest[i - coarse]) << traits::bits_per_limb)
 			+ static_cast<intermediate_type>(dest[i - coarse - 1]);
 
 		temp >>= traits::bits_per_limb - fine;
@@ -84,8 +84,8 @@ inline void shift_right(limb_type *dest, size_t dest_capacity, bool dest_signed,
 
 	for (; i + coarse + 1 < dest_capacity; ++i) {
 
-		intermediate_type temp =
-			(static_cast<intermediate_type>(dest[i + coarse + 1]) << traits::bits_per_limb)
+		intermediate_type temp
+			= (static_cast<intermediate_type>(dest[i + coarse + 1]) << traits::bits_per_limb)
 			+ static_cast<intermediate_type>(dest[i + coarse]);
 
 		temp >>= fine;
@@ -97,8 +97,8 @@ inline void shift_right(limb_type *dest, size_t dest_capacity, bool dest_signed,
 
 	if (i + coarse < dest_capacity) {
 
-		intermediate_type temp =
-			(static_cast<intermediate_type>(dest_extension) << traits::bits_per_limb)
+		intermediate_type temp
+			= (static_cast<intermediate_type>(dest_extension) << traits::bits_per_limb)
 			+ static_cast<intermediate_type>(dest[i + coarse]);
 
 		temp >>= fine;

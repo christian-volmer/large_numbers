@@ -1,12 +1,12 @@
 /*
-	             Copyright Christian Volmer 2024.
-	Distributed under the Boost Software License, Version 1.0.
-	     (See accompanying file LICENSE_1_0.txt or copy at
-	          https://www.boost.org/LICENSE_1_0.txt)
+                 Copyright Christian Volmer 2024.
+    Distributed under the Boost Software License, Version 1.0.
+         (See accompanying file LICENSE_1_0.txt or copy at
+              https://www.boost.org/LICENSE_1_0.txt)
 */
 
 /*
-	<no description>
+    <no description>
 */
 
 #pragma once
@@ -68,8 +68,8 @@ inline size_t quotient_remainder(
 
 	for (; quotient_i >= 0; --quotient_i) {
 
-		intermediate_type temp =
-			(static_cast<intermediate_type>(dividend[quotient_i + divisor_size]) << traits::bits_per_limb)
+		intermediate_type temp
+			= (static_cast<intermediate_type>(dividend[quotient_i + divisor_size]) << traits::bits_per_limb)
 			+ static_cast<intermediate_type>(dividend[quotient_i + divisor_size - 1]);
 
 		temp /= divisor_msl;

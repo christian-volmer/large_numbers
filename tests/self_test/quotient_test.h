@@ -1,12 +1,12 @@
 /*
-	             Copyright Christian Volmer 2024.
-	Distributed under the Boost Software License, Version 1.0.
-	     (See accompanying file LICENSE_1_0.txt or copy at
-	          https://www.boost.org/LICENSE_1_0.txt)
+                 Copyright Christian Volmer 2024.
+    Distributed under the Boost Software License, Version 1.0.
+         (See accompanying file LICENSE_1_0.txt or copy at
+              https://www.boost.org/LICENSE_1_0.txt)
 */
 
 /*
-	Test that calculates quotient and remainder of the division of random integers and checks if the results can be combined back to give the original dividend.
+    Test that calculates quotient and remainder of the division of random integers and checks if the results can be combined back to give the original dividend.
 */
 
 #pragma once

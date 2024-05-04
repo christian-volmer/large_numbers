@@ -1,12 +1,12 @@
 /*
-	             Copyright Christian Volmer 2024.
-	Distributed under the Boost Software License, Version 1.0.
-	     (See accompanying file LICENSE_1_0.txt or copy at
-	          https://www.boost.org/LICENSE_1_0.txt)
+                 Copyright Christian Volmer 2024.
+    Distributed under the Boost Software License, Version 1.0.
+         (See accompanying file LICENSE_1_0.txt or copy at
+              https://www.boost.org/LICENSE_1_0.txt)
 */
 
 /*
-	Test that parses random string representations to random number bases into integers, converts the result back to a string, and confirms that both strings match.
+    Test that parses random string representations to random number bases into integers, converts the result back to a string, and confirms that both strings match.
 */
 
 #pragma once
