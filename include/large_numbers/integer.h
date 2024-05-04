@@ -1,8 +1,8 @@
 /*
-				 Copyright Christian Volmer 2024.
+	             Copyright Christian Volmer 2024.
 	Distributed under the Boost Software License, Version 1.0.
-		 (See accompanying file LICENSE_1_0.txt or copy at
-			  https://www.boost.org/LICENSE_1_0.txt)
+	     (See accompanying file LICENSE_1_0.txt or copy at
+	          https://www.boost.org/LICENSE_1_0.txt)
 */
 
 /*
@@ -20,17 +20,17 @@ namespace large_numbers {
 
 
 /*
-	The `integer` template class stores an integer whose size is only limited by available memory. 
+	The `basic_integer` template class stores an integer whose size is only limited by available memory.
 	For the internal representation of its value it uses an array of so called 'limbs' of type
 	given by template parameter `limbT`. `limbT` can be `std::uint8_t`, `std::uint16_t` or `std::uint32_t`.
 */
 template<typename limbT>
-class integer {
+class basic_integer {
 
 public:
 
 	using limb_type = limbT;
-	using this_type = integer<limb_type>;
+	using this_type = basic_integer<limb_type>;
 	using traits = backend::limb_traits<limb_type>;
 
 private:
@@ -40,17 +40,17 @@ private:
 public:
 
 	// Default constructor, initialises the integers to the value zero.
-	integer();
+	basic_integer();
 
 	// Copy constructor
-	integer(this_type const &) = default;
+	basic_integer(this_type const &) = default;
 
 	// Move constructor
-	integer(this_type &&) noexcept = default;
+	basic_integer(this_type &&) noexcept = default;
 
 	// Constructs from a C++ system integer type.
 	template<typename other_type, std::enable_if_t<std::is_integral_v<other_type> && !std::is_same_v<other_type, bool>, bool> = true>
-	integer(other_type other);
+	basic_integer(other_type other);
 
 	this_type quotient_remainder(this_type divisor, this_type const offset = this_type());
 
@@ -199,13 +199,16 @@ public:
 };
 
 // Alias for a large integer type that uses 8 bit integers for its internal representation.
-using integer_8 = integer<std::uint8_t>;
+using integer_8 = basic_integer<std::uint8_t>;
 
 // Alias for a large integer type that uses 16 bit integers for its internal representation.
-using integer_16 = integer<std::uint16_t>;
+using integer_16 = basic_integer<std::uint16_t>;
 
 // Alias for a large integer type that uses 32 bit integers for its internal representation.
-using integer_32 = integer<std::uint32_t>;
+using integer_32 = basic_integer<std::uint32_t>;
+
+// Recommended alias type for large integers.
+using integer = integer_32;
 
 } // namespace large_numbers
 

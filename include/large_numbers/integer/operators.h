@@ -14,7 +14,7 @@
 namespace large_numbers {
 
 template<typename limbT>
-inline integer<limbT> integer<limbT>::operator-() const
+inline basic_integer<limbT> basic_integer<limbT>::operator-() const
 {
 	this_type result(*this);
 
@@ -24,7 +24,7 @@ inline integer<limbT> integer<limbT>::operator-() const
 }
 
 template<typename limbT>
-inline integer<limbT> &integer<limbT>::operator+=(this_type const &other)
+inline basic_integer<limbT> &basic_integer<limbT>::operator+=(this_type const &other)
 {
 	size_t other_limb_size = other.limb_size();
 
@@ -36,7 +36,7 @@ inline integer<limbT> &integer<limbT>::operator+=(this_type const &other)
 }
 
 template<typename limbT>
-inline integer<limbT> &integer<limbT>::operator-=(this_type const &other)
+inline basic_integer<limbT> &basic_integer<limbT>::operator-=(this_type const &other)
 {
 	size_t other_limb_size = other.limb_size();
 
@@ -48,7 +48,7 @@ inline integer<limbT> &integer<limbT>::operator-=(this_type const &other)
 }
 
 template<typename limbT>
-inline integer<limbT> &integer<limbT>::operator*=(this_type const &other)
+inline basic_integer<limbT> &basic_integer<limbT>::operator*=(this_type const &other)
 {
 	this_type const lhs = *this;
 	this_type const &rhs = other;

@@ -14,14 +14,14 @@
 namespace large_numbers {
 
 template<typename limbT>
-inline integer<limbT>::integer() :
+inline basic_integer<limbT>::basic_integer() :
 	m_limbs()
 {
 }
 
 template<typename limbT>
 template<typename other_type, std::enable_if_t<std::is_integral_v<other_type> && !std::is_same_v<other_type, bool>, bool>>
-inline integer<limbT>::integer(other_type other) :
+inline basic_integer<limbT>::basic_integer(other_type other) :
 	m_limbs()
 {
 	size_t required_size = backend::assign<limb_type>(nullptr, 0, other) + std::is_unsigned_v<other_type>;

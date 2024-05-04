@@ -14,7 +14,7 @@
 namespace large_numbers {
 
 template<typename limbT>
-limbT integer<limbT>::limb_at_extend(ptrdiff_t i) const noexcept
+limbT basic_integer<limbT>::limb_at_extend(ptrdiff_t i) const noexcept
 {
 	if (i < 0)
 		return 0;

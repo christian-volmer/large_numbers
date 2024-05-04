@@ -19,7 +19,6 @@
 #include "binomial_test.h"
 #include "quotient_test.h"
 #include "string_test.h"
-#include "testing.h"
 
 // Runs tests on the given integer type for the duration given in seconds
 // as the paramter `testTime_s`.

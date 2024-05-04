@@ -14,10 +14,10 @@
 namespace large_numbers {
 
 template<typename limbT>
-inline integer<limbT> integer<limbT>::from_string(std::string const &str, int base /* = 10 */)
+inline basic_integer<limbT> basic_integer<limbT>::from_string(std::string const &str, int base /* = 10 */)
 {
 	if (base < 2 && base > 36)
-		throw std::invalid_argument("integer::from_string(): parameter 'base' must be an integer between 2 and 36.");
+		throw std::invalid_argument("basic_integer::from_string(): parameter 'base' must be an integer between 2 and 36.");
 
 	this_type result;
 

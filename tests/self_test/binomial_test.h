@@ -11,6 +11,8 @@
 
 #pragma once
 
+#include "testing.h"
+
 template<typename integerT>
 inline bool binomial_test()
 {

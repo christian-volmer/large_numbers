@@ -14,12 +14,12 @@
 namespace large_numbers {
 
 template<typename limbT>
-inline std::string integer<limbT>::to_string(int base /* = 10 */) const
+inline std::string basic_integer<limbT>::to_string(int base /* = 10 */) const
 {
 	constexpr static char digits[37] = "0123456789abcdefghijklmnopqrstuvwxyz";
 
 	if (base < 2 && base > 36)
-		throw std::invalid_argument("integer::to_string(): parameter 'base' must be an integer between 2 and 36.");
+		throw std::invalid_argument("basic_integer::to_string(): parameter 'base' must be an integer between 2 and 36.");
 
 	if (zero())
 		return "0";

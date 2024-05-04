@@ -11,6 +11,8 @@
 
 #pragma once
 
+#include "string_test.h"
+
 template<typename integerT>
 inline bool string_test()
 {

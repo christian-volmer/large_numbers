@@ -14,7 +14,7 @@
 namespace large_numbers {
 
 template<typename limbT>
-inline integer<limbT> integer<limbT>::quotient_remainder(this_type divisor, this_type const offset /* = this_type() */)
+inline basic_integer<limbT> basic_integer<limbT>::quotient_remainder(this_type divisor, this_type const offset /* = this_type() */)
 {
 	if (!offset.zero()) {
 
