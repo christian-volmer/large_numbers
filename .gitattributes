@@ -1,0 +1,2 @@
+/.git*           export-ignore
+/.clang-format   export-ignore
