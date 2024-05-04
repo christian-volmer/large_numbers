@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Function to set a large integer to the value zero.
 */
 
 #pragma once

@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Large integer arithmetic shift left and shift right.
 */
 
 #pragma once

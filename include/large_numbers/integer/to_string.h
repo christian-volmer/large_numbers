@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    basic_integer<>::to_string() implementation. Converts a basic_integer<> to an std::string.
 */
 
 #pragma once

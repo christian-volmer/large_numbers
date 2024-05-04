@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Check if a large integer is numerically equal to zero.
 */
 
 #pragma once

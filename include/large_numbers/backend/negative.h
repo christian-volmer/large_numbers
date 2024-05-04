@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Determine if a large integer is negative.
 */
 
 #pragma once

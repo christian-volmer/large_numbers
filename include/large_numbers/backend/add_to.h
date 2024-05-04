@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Large integer addition.
 */
 
 #pragma once

@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Large integer division.
 */
 
 #pragma once

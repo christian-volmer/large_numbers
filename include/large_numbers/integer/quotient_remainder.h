@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    basic_integer<>::quotient_remainder() implementation.
 */
 
 #pragma once

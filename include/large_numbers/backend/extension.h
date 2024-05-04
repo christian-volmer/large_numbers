@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Function to determine the correct sign extension.
 */
 
 #pragma once

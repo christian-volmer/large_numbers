@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Large integer comparison.
 */
 
 #pragma once
@@ -26,7 +26,6 @@ inline int compare(
 		return -1;
 	else if (!lhs_negative && rhs_negative)
 		return 1;
-
 
 	// If both operands are shifted we can shift both of them back so that
 	// only the shift of one operand remains.
@@ -53,6 +52,7 @@ inline int compare(
 	limb_type lhs_extension = extension(lhs, lhs_size, lhs_signed);
 
 	// Signed sizes for later use
+
 	ptrdiff_t rhs_total_ssize = rhs_size + rhs_limb_shift_left;
 	ptrdiff_t lhs_total_ssize = lhs_size + lhs_limb_shift_left;
 	ptrdiff_t rhs_sshift = rhs_limb_shift_left;
@@ -76,9 +76,7 @@ inline int compare(
 
 	for (; i >= lhs_total_ssize; --i) {
 
-		/*if (lhs_extension < 0)
-			return swapped ? 1 : -1;
-		else*/ if (lhs_extension > 0)
+		if (lhs_extension > 0)
 			return swapped ? -1 : 1;
 	}
 
@@ -92,7 +90,6 @@ inline int compare(
 		else if (lhs[i - lhs_sshift] > rhs[i - rhs_sshift])
 			return swapped ? -1 : 1;
 	}
-
 
 	if (i >= 0) {
 

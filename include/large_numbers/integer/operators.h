@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    basic_integer<> operator implementations.
 */
 
 #pragma once

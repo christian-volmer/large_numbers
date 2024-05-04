@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Assignment from a C++ system integer to a large integer.
 */
 
 #pragma once

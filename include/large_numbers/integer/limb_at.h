@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    basic_integer<>::limb_at_extend() implementation. Returns the limb at the given index with correct sign extension and padding.
 */
 
 #pragma once

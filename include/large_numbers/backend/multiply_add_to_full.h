@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Add the multiplication of two large integers to a third large integer.
 */
 
 #pragma once

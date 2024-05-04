@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Large integer normalisation. Ensures that the most significant bit is 1.
 */
 
 #pragma once

@@ -6,7 +6,7 @@
 */
 
 /*
-    Example program that multiplies two 40 digit numbers and prints the result.
+    Minimum working example that multiplies two 40 digit numbers and prints the result.
 */
 
 #include <iostream>

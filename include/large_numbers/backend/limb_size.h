@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Function to determine the number of limbs required to represent a large integer.
 */
 
 #pragma once

@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    basic_integer<>::from_string() implementation. Constructs a basic_integer<> from an std::string.
 */
 
 #pragma once

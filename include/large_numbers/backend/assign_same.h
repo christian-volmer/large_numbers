@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Assignment from one large integer to another.
 */
 
 #pragma once

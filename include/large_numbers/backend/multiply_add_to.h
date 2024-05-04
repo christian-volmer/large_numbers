@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Add a large integer multiplied by a limb to another large integer.
 */
 
 #pragma once

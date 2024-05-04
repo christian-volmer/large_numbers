@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    Large integer arithmetic negation.
 */
 
 #pragma once

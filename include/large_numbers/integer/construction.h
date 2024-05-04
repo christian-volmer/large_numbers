@@ -6,7 +6,7 @@
 */
 
 /*
-    <no description>
+    basic_integer<> constructor implementations.
 */
 
 #pragma once
