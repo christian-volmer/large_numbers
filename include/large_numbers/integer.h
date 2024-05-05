@@ -82,10 +82,10 @@ public:
 	this_type &operator*=(this_type const &other);
 
 	// Divides the stored integer by the operand and discards any fractional part (truncates towards zero).
-	this_type &operator/=(this_type const &other);
+	this_type &operator/=(this_type divisor);
 
 	// Divides the stored integer by the operand and keeps the remainder.
-	this_type &operator%=(this_type const &other);
+	this_type &operator%=(this_type divisor);
 
 	// Increments the stored integer by one and returns the result.
 	this_type &operator++()

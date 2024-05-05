@@ -19,6 +19,7 @@
 #include "binomial_test.h"
 #include "quotient_test.h"
 #include "string_test.h"
+#include "native_division.h"
 
 // Runs tests on the given integer type for the duration given in seconds
 // as the paramter `testTime_s`.
@@ -35,7 +36,8 @@ bool test_suite(double testTime_s)
 
 		{ "Binomial formula test", binomial_test<integerT> },
 		{ "Quotient-remainder test", quotient_test<integerT> },
-		{ "String round-trip test", string_test<integerT> }
+		{ "String round-trip test", string_test<integerT> },
+		{ "Comparison against native division", native_division_test<integerT> }
 	};
 
 	std::cout << "Testing limb-size = " << integerT::traits::bits_per_limb << " bits.\n";

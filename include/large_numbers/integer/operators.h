@@ -64,4 +64,44 @@ inline basic_integer<limbT> &basic_integer<limbT>::operator*=(this_type const &o
 	return *this;
 }
 
+template<typename limbT>
+inline basic_integer<limbT> &basic_integer<limbT>::operator/=(this_type divisor)
+{
+	bool dividend_negative = this->negative();
+	bool divisor_negative = divisor.negative();
+
+	if (dividend_negative)
+		negate();
+
+	if (divisor_negative)
+		divisor.negate();
+
+	*this = quotient_remainder(divisor);
+
+	if (dividend_negative != divisor_negative)
+		negate();
+
+	return *this;
+}
+
+template<typename limbT>
+inline basic_integer<limbT> &basic_integer<limbT>::operator%=(this_type divisor)
+{
+	bool dividend_negative = this->negative();
+	bool divisor_negative = divisor.negative();
+
+	if (dividend_negative)
+		negate();
+
+	if (divisor_negative)
+		divisor.negate();
+
+	quotient_remainder(divisor);
+
+	if (dividend_negative)
+		negate();
+
+	return *this;
+}
+
 } // namespace large_numbers
